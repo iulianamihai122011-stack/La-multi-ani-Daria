@@ -1,58 +1,27 @@
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La mulți ani, Daria! 🌸</title>
+<button onclick="incepeSurpriza()">✨ Începe surpriza ✨</button>
 
-    <style>
-        body{
-            margin:0;
-            height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            flex-direction:column;
-            background:linear-gradient(#ffd6e7,#ffeef7);
-            font-family:Arial,sans-serif;
-            overflow:hidden;
-        }
+<script>
+function incepeSurpriza(){
+    document.body.innerHTML = `
+    <div style="height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(#ffe6f2,#fff0f8);
+    text-align:center;
+    font-family:Arial,sans-serif;">
 
-        h1{
-            color:#ff4f8b;
-            font-size:60px;
-            text-align:center;
-        }
+        <h1 style="color:#ff4f8b;font-size:55px;">
+        🌸 Bun venit, Daria! 🌸
+        </h1>
 
-        p{
-            font-size:22px;
-            color:#555;
-        }
+        <p style="font-size:25px;color:#666;max-width:700px;">
+        Astăzi este o zi foarte specială...
+        Am pregătit ceva doar pentru tine. 💖
+        </p>
 
-        button{
-            margin-top:25px;
-            padding:15px 35px;
-            font-size:20px;
-            border:none;
-            border-radius:30px;
-            background:#ff7fb2;
-            color:white;
-            cursor:pointer;
-        }
-
-        button:hover{
-            transform:scale(1.08);
-        }
-    </style>
-
-</head>
-<body>
-
-<h1>🌸 La mulți ani, Daria! 🌸</h1>
-
-<p>Acesta este doar începutul unei mici surprize... 💖</p>
-
-<button>✨ Începe surpriza ✨</button>
-
-</body>
-</html>
+    </div>
+    `;
+}
+</script>
